@@ -7,3 +7,7 @@
     </a>
 </div>
 <hero-search></hero-search>
+{{waiters}}
+<a *ngFor="let waiter of waiters" class="col-1-4">
+  <h4>{{waiter.tablename}}</h4>
+</a>
