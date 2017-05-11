@@ -6,8 +6,10 @@
         </div>
     </a>
 </div>
+<br>
 <hero-search></hero-search>
-{{waiters}}
-<a *ngFor="let waiter of waiters" class="col-1-4">
-  <h4>{{waiter.tablename}}</h4>
-</a>
+<br>
+<table class="table table-bordered">
+    <tr><td>TableID</td><td>TableNo</td><td>TableName</td></tr>
+    <tr *ngFor="let waiter of waiters"><td>{{waiter.tableid}}</td><td>{{waiter.tableno}}</td><td>{{waiter.tablename}}</td></tr>
+</table>
